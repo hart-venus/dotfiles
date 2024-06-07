@@ -82,6 +82,8 @@
     ];
   };
 
+  # Add zram
+  zramSwap.enable = true;
   # Install firefox.
   programs.firefox.enable = true;
   # Install steam
