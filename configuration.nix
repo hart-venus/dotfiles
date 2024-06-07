@@ -19,7 +19,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
   # Set your time zone.
   time.timeZone = "America/Costa_Rica";
 
