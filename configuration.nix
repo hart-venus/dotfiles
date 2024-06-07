@@ -104,6 +104,12 @@
     git
   ];
 
+  # LD fix
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    # Missing dynamic libraries here
+  ];
+
   environment.variables.EDITOR = "neovide --no-vsync";
 
   # Some programs need SUID wrappers, can be configured further or are
