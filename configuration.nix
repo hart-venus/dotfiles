@@ -134,6 +134,7 @@
     neovide
     anytype
     git
+    bat
   ];
 
   # LD fix
