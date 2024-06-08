@@ -11,17 +11,22 @@
     # };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, ... }@inputs: {
+  outputs = {
+    self,
+    nixpkgs,
+    nixpkgs-unstable,
+    ...
+  } @ inputs: {
     nixosConfigurations.pavilion = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
 
       specialArgs = {
         inherit inputs;
-	inherit system;
-	pkgs-unstable = import nixpkgs-unstable {
-	  inherit system;
-	  config.allowUnfree = true;
-	}; 
+        inherit system;
+        pkgs-unstable = import nixpkgs-unstable {
+          inherit system;
+          config.allowUnfree = true;
+        };
       };
       modules = [
         ./configuration.nix
