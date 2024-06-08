@@ -12,7 +12,7 @@
   };
 
   outputs = { self, nixpkgs, nixpkgs-unstable, ... }@inputs: {
-    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.default = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
 
       specialArgs = {
