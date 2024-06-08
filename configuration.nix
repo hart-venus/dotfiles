@@ -2,9 +2,11 @@
   config,
   pkgs,
   pkgs-unstable,
+  inputs,
   ...
 }: {
   imports = [
+    inputs.home-manager.nixosModules.default
     ./hardware-configuration.nix
   ];
 
@@ -74,6 +76,13 @@
   services.xserver.xkb = {
     layout = "us";
     variant = "";
+  };
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs;};
+    users = {
+      "hart" = import ./home.nix;
+    };
   };
 
   # Enable CUPS to print documents.
