@@ -1,6 +1,7 @@
 {
   config,
   pkgs,
+  pkgs-unstable,
   ...
 }: {
   imports = [
@@ -132,7 +133,7 @@
     libnotify
     neovim
     neovide
-    anytype
+    pkgs-unstable.anytype
     git
     bat
   ];
