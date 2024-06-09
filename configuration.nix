@@ -93,7 +93,7 @@
   # Configure keymap in X11
   services.xserver = {
     layout = "us,latam";
-    xkbOptions = "grp:ctrl_space_toggle";
+    xkbOptions = "grp:win_space_toggle";
   };
 
   home-manager = {
