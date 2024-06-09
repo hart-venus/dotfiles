@@ -7,8 +7,11 @@
   # manage.
   home.username = "hart";
   home.homeDirectory = "/home/hart";
-  # don't overwrite system keyboard configuration
-  home.keyboard = null;
+
+  # Configure keyboard layouts
+  home.keyboard.layout = "us,latam";
+  home.keyboard.options = "grp:grp:ctrl_space_toggle";
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
