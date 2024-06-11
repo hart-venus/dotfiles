@@ -162,6 +162,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    docker
     zed-editor
     floorp
     kitty
