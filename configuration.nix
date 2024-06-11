@@ -161,6 +161,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    zed-editor
     floorp
     kitty
     discord
