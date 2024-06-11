@@ -127,7 +127,7 @@
   users.users.hart = {
     isNormalUser = true;
     description = "Ariel Leyva";
-    extraGroups = ["networkmanager" "wheel" "docker"];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       #  thunderbird
     ];
