@@ -161,6 +161,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    heroku
     docker-compose
     zed-editor
     floorp
