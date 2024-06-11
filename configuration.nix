@@ -154,6 +154,7 @@
     lf
     godot_4
     blender
+    zsh
     obs-studio
     efibootmgr
     alejandra
