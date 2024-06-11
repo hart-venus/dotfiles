@@ -161,6 +161,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    floorp
     kitty
     discord
     git
