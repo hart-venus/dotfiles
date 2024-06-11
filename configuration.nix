@@ -162,6 +162,7 @@
     neovide
     pkgs-unstable.anytype
     kitty
+    discord
     git
     bat
   ];
