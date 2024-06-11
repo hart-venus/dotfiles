@@ -12,7 +12,6 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  virtualisation.docker.enable = true; # enable docker
   # NVIDIA SETUP
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
   hardware.opengl = {
@@ -127,7 +126,7 @@
   users.users.hart = {
     isNormalUser = true;
     description = "Ariel Leyva";
-    extraGroups = ["networkmanager" "wheel" "docker"];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       #  thunderbird
     ];
