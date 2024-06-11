@@ -168,6 +168,7 @@
     discord
     git
     bat
+    insomnia
   ];
 
   # LD fix
