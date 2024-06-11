@@ -13,6 +13,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   virtualisation.docker.enable = true; # enable docker
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
   # NVIDIA SETUP
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
   hardware.opengl = {
