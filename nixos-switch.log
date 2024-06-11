@@ -16,9 +16,14 @@ If you insist then you can disable this warning by adding
 
 to your configuration.
 
-trace: warning: The option `services.xserver.xkbOptions' defined in `/nix/store/4478csimdrmgyc2cqn2kb2l8fcjjvmrh-source/configuration.nix' has been renamed to `services.xserver.xkb.options'.
-trace: warning: The option `services.xserver.layout' defined in `/nix/store/4478csimdrmgyc2cqn2kb2l8fcjjvmrh-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
+trace: warning: The option `services.xserver.xkbOptions' defined in `/nix/store/pw54cxzh0zvwgwmhysvzyinvi5ad8kw2-source/configuration.nix' has been renamed to `services.xserver.xkb.options'.
+trace: warning: The option `services.xserver.layout' defined in `/nix/store/pw54cxzh0zvwgwmhysvzyinvi5ad8kw2-source/configuration.nix' has been renamed to `services.xserver.xkb.layout'.
+stopping the following units: accounts-daemon.service
 activating the configuration...
 setting up /etc...
 reloading user units for hart...
 restarting sysinit-reactivation.target
+reloading the following units: dbus.service
+restarting the following units: polkit.service
+starting the following units: accounts-daemon.service
+the following new units were started: sysinit-reactivation.target, systemd-tmpfiles-resetup.service
