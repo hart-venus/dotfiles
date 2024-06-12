@@ -22,6 +22,7 @@
 
   services.xserver.videoDrivers = ["nvidia"];
 
+  hardware.opentabletdriver.enable = true;
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = false;
