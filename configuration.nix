@@ -163,6 +163,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    krita
     heroku
     docker-compose
     zed-editor
