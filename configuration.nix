@@ -85,6 +85,7 @@
 
   environment.gnome.excludePackages = with pkgs; [
     gnome.gnome-terminal
+    pantheon.epiphany
     gnome-console
   ];
 
