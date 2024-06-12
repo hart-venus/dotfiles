@@ -35,6 +35,13 @@
     prime.nvidiaBusId = "PCI:1:0:0";
   };
 
+  services.xserver = {
+    layout = "us, latam";
+    xkbOptions = "grp:ctrl_space_toggle, ctrl:swapcaps";
+  };
+
+  console.useXkbConfig = true;
+
   system.autoUpgrade = {
     enable = true;
     flake = inputs.self.outPath;
@@ -88,12 +95,6 @@
     pantheon.epiphany
     gnome-console
   ];
-
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us,latam";
-    xkbOptions = "grp:win_space_toggle";
-  };
 
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
