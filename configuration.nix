@@ -164,6 +164,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    prismlauncher
     anki
     krita
     heroku
