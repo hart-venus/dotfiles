@@ -164,6 +164,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    anki
     krita
     heroku
     docker-compose
