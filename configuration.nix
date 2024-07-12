@@ -10,6 +10,10 @@
     ./hardware-configuration.nix
   ];
 
+  # Enable docker
+
+  virtualisation.docker.enable = true;
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   programs.direnv.enable = true;
@@ -130,7 +134,7 @@
   users.users.hart = {
     isNormalUser = true;
     description = "Ariel Leyva";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["networkmanager" "wheel" "docker"];
     packages = with pkgs; [
       #  thunderbird
     ];
@@ -179,6 +183,9 @@
     git
     bat
     insomnia
+    minikube
+    kubernetes
+    kubectl
   ];
 
   # LD fix
