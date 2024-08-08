@@ -172,6 +172,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    mtpaint
     killall
     prismlauncher
     anki
