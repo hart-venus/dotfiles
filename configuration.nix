@@ -10,6 +10,11 @@
     ./hardware-configuration.nix
   ];
 
+  # Bash aliases
+  programs.bash.shellAliases = {
+    cd = "z";
+  };
+
   # Enable docker
 
   virtualisation.docker.enable = true;
@@ -172,6 +177,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    zoxide
     mtpaint
     killall
     prismlauncher
