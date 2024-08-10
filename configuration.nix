@@ -195,6 +195,7 @@
     minikube
     kubernetes
     kubectl
+    ngrok
   ];
 
   # LD fix
