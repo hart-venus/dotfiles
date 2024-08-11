@@ -16,7 +16,7 @@
   };
 
   networking.extraHosts = ''
-    192.168.49.2 flask.local
+    192.168.49.2 your-domain.com
   '';
 
   # Enable docker
