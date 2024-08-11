@@ -15,6 +15,10 @@
     cd = "z";
   };
 
+  networking.extraHosts = ''
+    192.168.49.2 flask.local
+  '';
+
   # Enable docker
 
   virtualisation.docker.enable = true;
