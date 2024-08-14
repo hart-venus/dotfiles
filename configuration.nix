@@ -37,7 +37,7 @@
 
   services.xserver.videoDrivers = ["nvidia"];
 
-  hardware.opentabletdriver.enable = true;
+  hardware.opentabletdriver.enable = false; # buggy
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = false;
