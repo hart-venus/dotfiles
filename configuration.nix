@@ -18,7 +18,7 @@
   networking.extraHosts = ''
     192.168.49.2 your-domain.com
     192.168.49.2 kibana.your-domain.com
-    192.168.49.2 ui.crazychess.com
+    192.168.49.2 ui.your-domain.com
   '';
 
   # Enable docker
