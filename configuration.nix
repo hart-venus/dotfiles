@@ -183,6 +183,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    foliate
     zoxide
     mtpaint
     killall
