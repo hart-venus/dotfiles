@@ -169,6 +169,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     pkgs-unstable.xwaylandvideobridge
+    julia_19-bin
     obsidian
     qutebrowser
     cowsay
