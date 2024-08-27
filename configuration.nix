@@ -171,6 +171,7 @@
     libsForQt5.qt5.qtwayland
     pkgs-unstable.xwaylandvideobridge
     julia_19-bin
+    amberol
     obsidian
     qutebrowser
     cowsay
