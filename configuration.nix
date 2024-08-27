@@ -168,6 +168,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    libsForQt5.qt5.qtwayland
     pkgs-unstable.xwaylandvideobridge
     julia_19-bin
     obsidian
