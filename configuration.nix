@@ -213,6 +213,7 @@
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     # Missing dynamic libraries here
+    mesa
   ];
 
   environment.variables.EDITOR = "neovide --no-vsync";
