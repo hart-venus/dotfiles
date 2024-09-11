@@ -204,6 +204,7 @@
     discord
     git
     bat
+    mullvad-vpn
     insomnia
     minikube
     kubernetes
