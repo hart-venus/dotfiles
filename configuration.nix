@@ -174,6 +174,7 @@
     julia_19-bin
     amberol
     obsidian
+    normcap
     qutebrowser
     cowsay
     lf
