@@ -171,6 +171,7 @@
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtwayland
     pkgs-unstable.xwaylandvideobridge
+    xsel
     julia_19-bin
     amberol
     obsidian
