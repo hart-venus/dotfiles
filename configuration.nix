@@ -14,15 +14,9 @@
   programs.bash.shellAliases = {
     cd = "z";
   };
-
-  networking.extraHosts = ''
-    192.168.49.2 your-domain.com
-    192.168.49.2 kibana.your-domain.com
-    192.168.49.2 ui.your-domain.com
-  '';
-
   # Enable docker
 
+  services.mullvad-vpn.enable = true;
   virtualisation.docker.enable = true;
 
   boot.loader.systemd-boot.enable = true;
