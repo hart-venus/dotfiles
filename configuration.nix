@@ -18,6 +18,7 @@
 
   services.mullvad-vpn.enable = true;
   virtualisation.docker.enable = true;
+  virtualisation.waydroid.enable = true;
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
