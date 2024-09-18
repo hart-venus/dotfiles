@@ -200,6 +200,7 @@
     git
     bat
     mullvad-vpn
+    wine
     insomnia
     minikube
     kubernetes
