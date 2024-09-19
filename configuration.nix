@@ -184,6 +184,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    appimage-run
     foliate
     zoxide
     mtpaint
