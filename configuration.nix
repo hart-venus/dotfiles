@@ -10,6 +10,12 @@
     ./hardware-configuration.nix
   ];
 
+  # Network config
+  networking.extraHosts = ''
+    192.168.49.2 www.example.com
+    192.168.49.2 www.servertwo.com
+  '';
+
   # Bash aliases
   programs.bash.shellAliases = {
     cd = "z";
