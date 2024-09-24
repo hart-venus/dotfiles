@@ -190,6 +190,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    tor-browser-bundle-bin
     appimage-run
     foliate
     zoxide
