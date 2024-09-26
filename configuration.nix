@@ -191,6 +191,8 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    clang
+    nodejs_22
     tor-browser-bundle-bin
     appimage-run
     foliate
