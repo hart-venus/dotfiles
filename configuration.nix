@@ -177,6 +177,7 @@
     amberol
     obsidian
     normcap
+    jq
     qutebrowser
     cowsay
     lf
