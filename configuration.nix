@@ -202,7 +202,7 @@
     krita
     heroku
     docker-compose
-    zed-editor
+    pkgs-unstable.zed-editor
     floorp
     kitty
     discord
