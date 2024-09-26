@@ -191,6 +191,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    zed-editor
     clang
     nodejs_22
     tor-browser-bundle-bin
