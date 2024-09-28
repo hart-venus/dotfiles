@@ -4,7 +4,16 @@
   pkgs-unstable,
   inputs,
   ...
-}: {
+}: let
+  zed-fhs = pkgs.buildFHSUserEnv {
+    name = "zed";
+    targetPkgs = pkgs:
+      with pkgs; [
+        zed-editor
+      ];
+    runScript = "zed";
+  };
+in {
   imports = [
     inputs.home-manager.nixosModules.default
     ./hardware-configuration.nix
@@ -191,7 +200,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
-    zed-editor
+    zed-fhs
     clang
     nodejs_22
     tor-browser-bundle-bin
