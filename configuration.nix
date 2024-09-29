@@ -9,7 +9,7 @@
     name = "zed";
     targetPkgs = pkgs:
       with pkgs; [
-        zed-editor
+        pkgs-unstable.zed-editor
       ];
     runScript = "zed";
   };
