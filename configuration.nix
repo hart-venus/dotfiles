@@ -4,16 +4,7 @@
   pkgs-unstable,
   inputs,
   ...
-}: let
-  zed-fhs = pkgs.buildFHSUserEnv {
-    name = "zed";
-    targetPkgs = pkgs:
-      with pkgs; [
-        pkgs-unstable.zed-editor
-      ];
-    runScript = "zed";
-  };
-in {
+}: {
   imports = [
     inputs.home-manager.nixosModules.default
     ./hardware-configuration.nix
@@ -181,6 +172,7 @@ in {
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtwayland
     pkgs-unstable.xwaylandvideobridge
+    pkgs-unstable.zed-editor
     xsel
     julia_19-bin
     amberol
@@ -200,7 +192,7 @@ in {
     neovim
     neovide
     pkgs-unstable.anytype
-    zed-fhs
+    pkgs-unstable.aider-chat
     clang
     nodejs_22
     tor-browser-bundle-bin
