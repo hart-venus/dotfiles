@@ -172,7 +172,7 @@
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtwayland
     pkgs-unstable.xwaylandvideobridge
-    pkgs-unstable.zed-editor
+    pkgs-unstable.zed-editor.fhs
     xsel
     google-chrome
     julia_19-bin
