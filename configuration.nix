@@ -123,7 +123,7 @@
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
-
+  programs.openvpn3.enable = true;
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -174,7 +174,6 @@
     pkgs-unstable.xwaylandvideobridge
     pkgs-unstable.zed-editor.fhs
     xsel
-    openvpn
     google-chrome
     julia_19-bin
     amberol
