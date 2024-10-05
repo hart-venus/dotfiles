@@ -174,6 +174,7 @@
     pkgs-unstable.xwaylandvideobridge
     pkgs-unstable.zed-editor.fhs
     xsel
+    openvpn
     google-chrome
     julia_19-bin
     amberol
