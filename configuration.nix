@@ -193,6 +193,7 @@
     neovim
     neovide
     pkgs-unstable.anytype
+    jmeter
     pkgs-unstable.aider-chat
     clang
     nodejs_22
