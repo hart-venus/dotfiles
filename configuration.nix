@@ -10,12 +10,6 @@
     ./hardware-configuration.nix
   ];
 
-  # Network config
-  networking.extraHosts = ''
-    192.168.49.2 www.example.com
-    192.168.49.2 www.servertwo.com
-  '';
-
   # Bash aliases
   programs.bash.shellAliases = {
     cd = "z";
@@ -173,6 +167,7 @@
     libsForQt5.qt5.qtwayland
     pkgs-unstable.xwaylandvideobridge
     pkgs-unstable.zed-editor.fhs
+    go
     xsel
     google-chrome
     julia_19-bin
