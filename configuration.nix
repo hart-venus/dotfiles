@@ -15,9 +15,7 @@
     cd = "z";
   };
   # Enable docker
-  services.xrdp.enable = true;
-  services.xrdp.defaultWindowManager = "${pkgs.gnome.gnome-session}/bin/gnome-session";
-  services.xrdp.openFirewall = true;
+
   services.mullvad-vpn.enable = true;
   virtualisation.docker.enable = true;
   virtualisation.waydroid.enable = true;
@@ -181,6 +179,7 @@
     jq
     qutebrowser
     cowsay
+    gnome3.gnome-remote-desktop
     lf
     godot_4
     blender
@@ -228,6 +227,8 @@
     mesa
   ];
 
+  services.gnome.gnome-remote-desktop.enable = true;
+
   # remote editor
   environment.variables.EDITOR = "neovide --no-vsync";
   environment.variables.TERMINAL = "kitty";
@@ -256,6 +257,11 @@
   systemd.targets.suspend.enable = false;
   systemd.targets.hibernate.enable = false;
   systemd.targets.hybrid-sleep.enable = false;
+
+  services.xrdp.enable = true;
+  services.xrdp.defaultWindowManager = "${pkgs.gnome.gnome-session}/bin/gnome-session";
+  services.xrdp.openFirewall = true;
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
