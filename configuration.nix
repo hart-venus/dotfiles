@@ -170,7 +170,6 @@
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtwayland
     freerdp3
-    pkgs.gnome.gnome-remote-desktop
     pkgs-unstable.xwaylandvideobridge
     pkgs-unstable.zed-editor.fhs
     go
@@ -231,7 +230,6 @@
   ];
 
   # remote editor
-  services.gnome.gnome-remote-desktop.enable = true;
   environment.variables.EDITOR = "neovide --no-vsync";
   environment.variables.TERMINAL = "kitty";
 
