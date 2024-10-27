@@ -20,6 +20,10 @@
   virtualisation.docker.enable = true;
   virtualisation.waydroid.enable = true;
 
+  services.xrdp.enable = true;
+  services.xrdp.defaultWindowManager = "${pkgs.gnome.gnome-session}/bin/gnome-session";
+  services.xrdp.openFirewall = true;
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   programs.direnv.enable = true;
