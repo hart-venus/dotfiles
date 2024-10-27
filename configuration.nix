@@ -179,7 +179,6 @@
     jq
     qutebrowser
     cowsay
-    gnome3.gnome-remote-desktop
     lf
     godot_4
     blender
@@ -226,8 +225,6 @@
     # Missing dynamic libraries here
     mesa
   ];
-
-  services.gnome.gnome-remote-desktop.enable = true;
 
   # remote editor
   environment.variables.EDITOR = "neovide --no-vsync";
