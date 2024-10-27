@@ -32,7 +32,8 @@
   };
 
   services.xserver.videoDrivers = ["nvidia"];
-
+  networking.firewall.allowedTCPPorts = [3389];
+  networking.firewall.allowedUDPPorts = [3389];
   hardware.opentabletdriver.enable = false; # buggy
   hardware.nvidia = {
     modesetting.enable = true;
