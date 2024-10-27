@@ -166,6 +166,7 @@
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtwayland
     gnome3.dconf-editor
+    gnome3.gnome-remote-desktop
     freerdp3
     pkgs-unstable.xwaylandvideobridge
     pkgs-unstable.zed-editor.fhs
