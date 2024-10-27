@@ -15,6 +15,8 @@
     cd = "z";
   };
   # Enable docker
+  services.xrdp.enable = true;
+  services.xrdp.defaultWindowManager = "${pkgs.gnome.gnome-session}/bin/gnome-session";
   services.xrdp.openFirewall = true;
   services.mullvad-vpn.enable = true;
   virtualisation.docker.enable = true;
@@ -166,7 +168,6 @@
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtwayland
     freerdp3
-    pkgs.gnome.gnome-remote-desktop
     pkgs-unstable.xwaylandvideobridge
     pkgs-unstable.zed-editor.fhs
     go
@@ -227,7 +228,6 @@
   ];
 
   # remote editor
-  services.gnome.gnome-remote-desktop.enable = true;
   environment.variables.EDITOR = "neovide --no-vsync";
   environment.variables.TERMINAL = "kitty";
 
