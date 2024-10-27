@@ -15,7 +15,7 @@
     cd = "z";
   };
   # Enable docker
-
+  services.xrdp.openFirewall = true;
   services.mullvad-vpn.enable = true;
   virtualisation.docker.enable = true;
   virtualisation.waydroid.enable = true;
