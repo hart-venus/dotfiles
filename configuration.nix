@@ -168,6 +168,7 @@
     libsForQt5.qt5.qtwayland
     freerdp3
     pkgs-unstable.gleam
+    pkgs-unstable.erlang
     inotify-tools
     pkgs-unstable.xwaylandvideobridge
     pkgs-unstable.zed-editor.fhs
