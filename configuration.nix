@@ -167,6 +167,8 @@
   environment.systemPackages = with pkgs; [
     libsForQt5.qt5.qtwayland
     freerdp3
+    gleam
+    inotify-tools
     pkgs-unstable.xwaylandvideobridge
     pkgs-unstable.zed-editor.fhs
     go
