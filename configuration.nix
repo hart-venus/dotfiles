@@ -169,6 +169,7 @@
     freerdp3
     pkgs-unstable.gleam
     pkgs-unstable.erlang
+    pkgs-unstable.rebar3
     inotify-tools
     pkgs-unstable.xwaylandvideobridge
     pkgs-unstable.zed-editor.fhs
